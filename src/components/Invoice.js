@@ -3,48 +3,75 @@ import React from 'react';
 function Invoice() {
     return (
         <>
-            <form action="">
-            
-            <label htmlFor="invoiceName" className='sr-only'>Invoice</label>
-            <input type="text" name='incoiceName' placeholder='Invoice' />
+            <div className="mainForm">
 
-            <div className="from"> {/* Start of from Div */}
-            <h2>From</h2>
+                <form action="">
+                
+                <label htmlFor="invoiceName" className='sr-only'>Invoice</label>
+                <input type="text" name='incoiceName' placeholder='Invoice' />
 
-            <label htmlFor="name" className='sr-only'>Name</label>
-            <input type="text" name='name' placeholder='Buisness Name' />
+                <input className='logo' type="file" name="file" id="file" accept="image/png, image/jpeg"/>
 
-            <label htmlFor="email" className='sr-only'>Email</label>
-            <input type="email" name='email' placeholder='name@buisness.com' />
+                <div className="from"> {/* Start of from Div */}
+                <h2>From</h2>
 
-            <label htmlFor="adress" className='sr-only'>Adress</label>
-            <input type="adress" name='adress' placeholder='123 Elm street' />
+                <label htmlFor="name" className='sr-only'>Name</label>
+                <input type="text" name='name' placeholder='Buisness Name' />
 
-            <label htmlFor="phone" className='sr-only'>Phone</label>
-            <input type="phone" name='phone' placeholder='(123) 456 7891' />
+                <label htmlFor="email" className='sr-only'>Email</label>
+                <input type="email" name='email' placeholder='name@buisness.com' />
 
-            <label htmlFor="gst" className='sr-only'>GST#</label>
-            <input type="text" name='gst' placeholder='123133' />
-            </div> {/* End of from Div */}
+                <label htmlFor="adress" className='sr-only'>Adress</label>
+                <input type="adress" name='adress' placeholder='123 Elm street' />
 
-            <div className="to"> {/* Start of to Div */}
-            <h2>To</h2>
+                <label htmlFor="phone" className='sr-only'>Phone</label>
+                <input type="phone" name='phone' placeholder='(123) 456 7891' />
 
-            <label htmlFor="name" className='sr-only'>Name</label>
-            <input type="text" name='name' placeholder='Client Name' />
+                <label htmlFor="gst" className='sr-only'>GST#</label>
+                <input type="text" name='gst' placeholder='123133' />
+                </div> {/* End of from Div */}
 
-            <label htmlFor="email" className='sr-only'>Email</label>
-            <input type="email" name='email' placeholder='name@client.com' />
+                <div className="to"> {/* Start of to Div */}
+                <h2>To</h2>
 
-            <label htmlFor="adress" className='sr-only'>Adress</label>
-            <input type="adress" name='adress' placeholder='123 Elm street' />
+                <label htmlFor="name" className='sr-only'>Name</label>
+                <input type="text" name='name' placeholder='Client Name' />
 
-            <label htmlFor="phone" className='sr-only'>Phone</label>
-            <input type="phone" name='phone' placeholder='(123) 456 7891' />
-            </div> {/* End of to Div */}
+                <label htmlFor="email" className='sr-only'>Email</label>
+                <input type="email" name='email' placeholder='name@client.com' />
 
+                <label htmlFor="adress" className='sr-only'>Adress</label>
+                <input type="adress" name='adress' placeholder='123 Elm street' />
 
-            </form>
+                <label htmlFor="phone" className='sr-only'>Phone</label>
+                <input type="phone" name='phone' placeholder='(123) 456 7891' />
+                </div> {/* End of to Div */}
+
+                <ul>
+                    <li>
+                        <h3>Subtotal</h3>
+                        <p>$0.00</p>
+                    </li>
+                    <li>
+                        <h3>Tax (0%)</h3>
+                        <p>$0.00</p>
+                    </li>
+                    <li>
+                        <h3>Total</h3>
+                        <p>$0.00</p>
+                    </li>
+                    <li>
+                        <h3>Balance Due</h3>
+                        <p>$0.00</p>
+                    </li>
+                </ul>
+
+                <label htmlFor="notes">Notes</label>
+                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+
+                </form>
+
+            </div> {/* end of main form  */}
         </>
     );
 }
