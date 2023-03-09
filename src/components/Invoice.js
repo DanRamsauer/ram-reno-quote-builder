@@ -12,7 +12,7 @@ function Invoice() {
 
                 <input className='logo' type="file" name="file" id="file" accept="image/png, image/jpeg"/>
 
-                <div className="from"> {/* Start of from Div */}
+                <div className="formFrom"> {/* Start of from Div */}
                 <h2>From</h2>
 
                 <label htmlFor="name" className='sr-only'>Name</label>
@@ -31,7 +31,7 @@ function Invoice() {
                 <input type="text" name='gst' placeholder='123133' />
                 </div> {/* End of from Div */}
 
-                <div className="to"> {/* Start of to Div */}
+                <div className="formTo"> {/* Start of to Div */}
                 <h2>To</h2>
 
                 <label htmlFor="name" className='sr-only'>Name</label>
